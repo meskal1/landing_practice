@@ -106,7 +106,7 @@
 // }
 // let height = null;
 // let width = null;
-// let area = height ?? 100 * width ?? 50;
+// let area = height ?? 100 * width ?? 5;
 // alert(area);
 // for (let i = 0; i < 3; i = i + 1) {
 //   alert(i);
@@ -114,10 +114,10 @@
 let sum = 0;
 
 while (true) {
-  let value = +prompt("Введите число", "");
+	let value = +prompt("Введите число", "");
 
-  if (!value) break; // (*)
+	if (!value) break; // (*)
 
-  sum += value;
+	sum += value;
 }
 alert("Сумма: " + sum);
