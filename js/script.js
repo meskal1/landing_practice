@@ -192,18 +192,60 @@
 // user.n2amer = "e2e1";
 // user.chislo = "111";
 // console.log(user);
-let numberOfFilms = +prompt(`Сколько фильмов Вы уже посмотрели?`, "");
+// let numberOfFilms = +prompt(`Сколько фильмов Вы уже посмотрели?`, "");
+// let personaMovieDB = {
+// count: numberOfFilms,
+// movies: {},
+// actors: {},
+// genres: [],
+// privat: false,
+// };
+// let q1 = prompt(`последний фильм?`, ""),
+// 	q2 = prompt(`оценка фильма?`, ""),
+// 	q3 = prompt(`последний фильм?`, ""),
+// 	q4 = prompt(`оценка фильма?`, "");
+// personaMovieDB.movies[q1] = q2;
+// personaMovieDB.movies[q3] = q4;
+// console.log(personaMovieDB);
 let personaMovieDB = {
-	count: numberOfFilms,
 	movies: {},
-	actors: {},
-	genres: [],
-	privat: false,
+	count: 10,
 };
-let q1 = prompt(`последний фильм?`, ""),
-	q2 = prompt(`оценка фильма?`, ""),
-	q3 = prompt(`последний фильм?`, ""),
-	q4 = prompt(`оценка фильма?`, "");
-personaMovieDB.movies[q1] = q2;
-personaMovieDB.movies[q3] = q4;
+// for (let i = 0; i < 2; i++) {
+// 	let q1 = prompt(`последний фильм?`, "");
+// 	while (q1 == null || q1 == "" || q1.length > 50) {
+// 		q1 = prompt(`последний фильм?`, "");
+// 	}
+// 	let q2 = prompt(`оценка фильма?`, "");
+// 	while (q2 == null || q2 == "" || q2.length > 50) {
+// 		q2 = prompt(`оценка фильма?`, "");
+// 	}
+// 	personaMovieDB.movies[q1] = q2;
+// }
+// for (let i = 0; i < 2; i++) {
+// let q1 = prompt(`последний фильм?`, ""),
+// q2 = prompt(`оценка фильма?`, "");
+// personaMovieDB.movies[q1] = q2;
+// }
+let i = 0;
+do {
+	let q1 = prompt(`последний фильм?`, "");
+	while (q1 == null || q1 == "") {
+		q1 = prompt(`последний фильм?`, "");
+	}
+	let q2 = prompt(`оценка фильма?`, "");
+	while (q2 == null || q2 == "") {
+		q2 = prompt(`оценка фильма?`, "");
+	}
+	i++;
+} while (i < 2);
+// if (personaMovieDB.count <= 10) {
+// 	alert(`просмотрено мало`);
+// } else if (personaMovieDB.count > 10 && personaMovieDB.count <= 30) {
+// 	alert(`класический зритель`);
+// } else if (personaMovieDB.count > 30) {
+// 	alert(`киноман`);
+// } else {
+// 	alert(`error`);
+// }
 console.log(personaMovieDB);
