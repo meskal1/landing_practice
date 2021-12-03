@@ -111,13 +111,84 @@
 // for (let i = 0; i < 3; i = i + 1) {
 //   alert(i);
 // }
-let sum = 0;
-
-while (true) {
-	let value = +prompt("Введите число", "");
-
-	if (!value) break; // (*)
-
-	sum += value;
-}
-alert("Сумма: " + sum);
+// let sum = 0;
+// while (true) {
+// 	let value = +prompt("Введите число", "");
+// 	if (!value) break; // (*)
+// 	sum += value;
+// }
+// alert("Сумма: " + sum);
+// for (let i = 2; i < 11; i++) {
+// 	if (i % 2 == 0) {
+// 		alert(i);
+// 	}
+// }
+// for (let i = 0; i < 3; i++) {
+// 	alert(`number ${i}!`);
+// }
+// let i = 0;
+// while (i < 3) {
+// 	alert(`number ${i}!`);
+// 	i++;
+// }
+// let num;
+// func: do {
+// 	num = prompt(`Введите число больше 100`, ``);
+// 	if (num == null) break func;
+// } while (num < 100);
+// let n = 10,
+// 	num = 2;
+// fun: for (num; num < n; num++) {
+// 	for (let x = 2; x < num; x++) {
+// 		if (num % x == 0) continue fun;
+// 	}
+// 	alert(`${num} - простое число из интервала от 2 до ${n}`);
+// }
+// let browser = prompt(`browser?`, ``);
+// if (browser == "Edge") {
+// 	alert("You've got the Edge!");
+// } else if (browser == "Chrome" || browser == "Firefox" || browser == "Safari") {
+// 	alert("Okay we support these browsers too");
+// } else {
+// 	alert("We hope that this page looks ok!");
+// }
+// const number = +prompt("Введите число между 0 и 3", "");
+// switch (number) {
+// 	case 0:
+// 		alert("Вы ввели число 0");
+// 		break;
+// 	case 1:
+// 		alert("Вы ввели число 1");
+// 		break;
+// 	case 2:
+// 	case 3:
+// 		alert("Вы ввели число 2, а может и 3");
+// 		break;
+// }
+// function checkAge(age) {
+// 	age > 18 ? true : confirm("Родители разрешили?");
+// }
+// checkAge(10);
+// function checkAge(age) {
+// 	age > 18 || confirm("Родители разрешили?");
+// }
+// function minNumber(a, b) {
+// 	if (a < b) {
+// 		return a;
+// 	}
+// 	return b;
+// }
+// alert(minNumber(1, -3));
+// function powNumber(x, n) {
+// 	let result = x;
+// 	for (let i = 1; i < n; i++) {
+// 		result = result * x;
+// 	}
+// 	return result;
+// }
+// alert(powNumber(2, 3));
+// let user = {};
+// user.namer = 1;
+// user.n2amer = "e2e1";
+// user.chislo = "111";
+// console.log(user);
