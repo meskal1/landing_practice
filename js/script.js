@@ -192,3 +192,18 @@
 // user.n2amer = "e2e1";
 // user.chislo = "111";
 // console.log(user);
+let numberOfFilms = +prompt(`Сколько фильмов Вы уже посмотрели?`, "");
+let personaMovieDB = {
+	count: numberOfFilms,
+	movies: {},
+	actors: {},
+	genres: [],
+	privat: false,
+};
+let q1 = prompt(`последний фильм?`, ""),
+	q2 = prompt(`оценка фильма?`, ""),
+	q3 = prompt(`последний фильм?`, ""),
+	q4 = prompt(`оценка фильма?`, "");
+personaMovieDB.movies[q1] = q2;
+personaMovieDB.movies[q3] = q4;
+console.log(personaMovieDB);
