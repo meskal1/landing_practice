@@ -192,14 +192,9 @@
 // user.n2amer = "e2e1";
 // user.chislo = "111";
 // console.log(user);
+
 // let numberOfFilms = +prompt(`Сколько фильмов Вы уже посмотрели?`, "");
-// let personaMovieDB = {
-// count: numberOfFilms,
-// movies: {},
-// actors: {},
-// genres: [],
-// privat: false,
-// };
+
 // let q1 = prompt(`последний фильм?`, ""),
 // 	q2 = prompt(`оценка фильма?`, ""),
 // 	q3 = prompt(`последний фильм?`, ""),
@@ -207,38 +202,94 @@
 // personaMovieDB.movies[q1] = q2;
 // personaMovieDB.movies[q3] = q4;
 // console.log(personaMovieDB);
-let personaMovieDB = {
-	movies: {},
-	count: 10,
-};
-// for (let i = 0; i < 2; i++) {
-// 	let q1 = prompt(`последний фильм?`, "");
-// 	while (q1 == null || q1 == "" || q1.length > 50) {
-// 		q1 = prompt(`последний фильм?`, "");
-// 	}
-// 	let q2 = prompt(`оценка фильма?`, "");
-// 	while (q2 == null || q2 == "" || q2.length > 50) {
-// 		q2 = prompt(`оценка фильма?`, "");
-// 	}
-// 	personaMovieDB.movies[q1] = q2;
-// }
+// let personaMovieDB = {
+// 	movies: {},
+// 	count: 10,
+// };
+
 // for (let i = 0; i < 2; i++) {
 // let q1 = prompt(`последний фильм?`, ""),
 // q2 = prompt(`оценка фильма?`, "");
 // personaMovieDB.movies[q1] = q2;
 // }
-let i = 0;
-do {
-	let q1 = prompt(`последний фильм?`, "");
-	while (q1 == null || q1 == "") {
-		q1 = prompt(`последний фильм?`, "");
-	}
-	let q2 = prompt(`оценка фильма?`, "");
-	while (q2 == null || q2 == "") {
-		q2 = prompt(`оценка фильма?`, "");
-	}
-	i++;
-} while (i < 2);
+// let i = 0;
+// do {
+// 	let q1 = prompt(`последний фильм?`, "");
+// 	while (q1 == null || q1 == "") {
+// 		q1 = prompt(`последний фильм?`, "");
+// 	}
+// 	let q2 = prompt(`оценка фильма?`, "");
+// 	while (q2 == null || q2 == "") {
+// 		q2 = prompt(`оценка фильма?`, "");
+// 	}
+// 	i++;
+// } while (i < 2);
+
+// console.log(personaMovieDB);
+// let num1 = +prompt(`Введите 1-е число`, ``),
+// 	num2 = +prompt(`Введите 2-е число`, ``);
+// function sum(num1, num2) {
+// 	return num1 + num2;
+// }
+// alert(sum(num1, num2));
+
+// function createCounter() {
+// 	let counter = 0;
+// 	const myFunction = function () {
+// 		counter = counter + 1;
+// 		return counter;
+// 	};
+// 	return myFunction;
+// }
+// const increment = createCounter();
+// const c1 = increment();
+// const c2 = increment();
+// const c3 = increment();
+// console.log("example increment", c1, c2, c3);
+
+// let stroka = "строка валуе";
+// let y = stroka.slice(6);
+// console.log(stroka.slice(6));
+// alert(y);
+
+//--------------------------------------------------------------------------------------
+
+// Функция возвращает количество просмотренных фильмов
+// function watchFilmsNumber() {
+// 	let numberOfFilms = +prompt(`Скока фильмов Вы посмотрели?`, ``);
+// 	while (isNaN(numberOfFilms) || numberOfFilms == null || numberOfFilms == "") {
+// 		numberOfFilms = +prompt(`Скока фильмов Вы посмотрели?`, ``);
+// 	}
+// }
+// watchFilmsNumber();
+
+// Объект База Данных Кино
+let personaMovieDB = {
+	// count: numberOfFilms,
+	movies: {},
+	actors: {},
+	genres: [],
+	privat: false,
+};
+
+// Функция повторяет вопросы по 2 раза, пока на них не будут даны соответствующие ответы
+// function questionsAboutFilmsAndItsRatings(){
+// for (let i = 0; i < 2; i++) {
+// 	let lastFilmWatch = prompt(`Какой последний фильм Вы смотрели?`, "");
+// 	while (lastFilmWatch == null || lastFilmWatch == "" || lastFilmWatch.length > 15) {
+// 		lastFilmWatch = prompt(`Какой последний фильм Вы смотрели?`, "");
+// 	}
+// 	let filmRating = prompt(`Оцените фильм по шкале от 1 до 10?`, "");
+// 	while (filmRating == null || filmRating == "" || filmRating.length > 10) {
+// 		filmRating = prompt(`Оцените фильм по шкале от 1 до 10?`, "");
+// 	}
+// 	personaMovieDB.movies[lastFilmWatch] = filmRating;
+// }
+// }
+// questionsAboutFilmsAndItsRatings();
+
+// Функция возвращает кино-достижение зрителя
+// function personalMovieAchivment(){
 // if (personaMovieDB.count <= 10) {
 // 	alert(`просмотрено мало`);
 // } else if (personaMovieDB.count > 10 && personaMovieDB.count <= 30) {
@@ -248,4 +299,21 @@ do {
 // } else {
 // 	alert(`error`);
 // }
-console.log(personaMovieDB);
+// }
+// personalMovieAchivment();
+
+// Фукнция проверяет значение свойства privat в обьекте personaMovieDB
+// function showMyDB() {
+// 	if (!personaMovieDB.privat) {
+// 		alert(`Главный объект программы`);
+// 	}
+// }
+// showMyDB();
+
+// function writeYourGenres() {
+// 	for (let i = 1; i <= 3; i++) {
+// 		personaMovieDB.genres[i - 1] = prompt(`Ваш любимый жанр под номером ${i}`, ``);
+// 	}
+// }
+// writeYourGenres();
+// console.log(personaMovieDB.genres);
