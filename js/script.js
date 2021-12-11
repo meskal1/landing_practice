@@ -264,13 +264,13 @@
 // watchFilmsNumber();
 
 // Объект База Данных Кино
-let personaMovieDB = {
+// let personaMovieDB = {
 	// count: numberOfFilms,
-	movies: {},
-	actors: {},
-	genres: [],
-	privat: false,
-};
+// 	movies: {},
+// 	actors: {},
+// 	genres: [],
+// 	privat: false,
+// };
 
 // Функция повторяет вопросы по 2 раза, пока на них не будут даны соответствующие ответы
 // function questionsAboutFilmsAndItsRatings(){
@@ -317,3 +317,32 @@ let personaMovieDB = {
 // }
 // writeYourGenres();
 // console.log(personaMovieDB.genres);
+//--------------------------------------------------------------------------------
+// function ucFirst() {
+// 	let Name = "вася";
+// return Name.charAt(0).toUpperCase() + Name.slice(1);
+// 	return Name[0].toUpperCase() + Name.slice(1);
+// }
+// console.log(ucFirst());
+
+// let char;
+// for (char of "Hello") {
+// 	alert(char); // H,e,l,l,o (char — сначала "H", потом "e", потом "l" и т. д.)
+// }
+
+// let str = "Weidgeitwithidwith";
+// alert(str.indexOf("i", 30));
+// alert(str.length);
+
+// function fibonacciGenerator (n) {
+// 	 let fibonacciArray = [0,1];
+// 	 for (let i = 0; i < n; i++){
+// 	 let arrayLength = fibonacciArray.length;
+// 	 let numberBeforeLast = fibonacciArray[arrayLength - 2];
+// 	 let lastNumber = fibonacciArray[arrayLength - 1];
+// 	 let addElement = fibonacciArray.push(numberBeforeLast + lastNumber);
+// 	 }
+//    console.log(fibonacciArray.slice([0], [n]));
+// }
+// fibonacciGenerator (10);
+
