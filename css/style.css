@@ -184,7 +184,7 @@ body {
 
 @media (max-width: 400px) {
   .nav-items__ulist :not(:last-child) {
-    margin: 0px 15px 0px 0px;
+    margin: 0px 12px 0px 0px;
   }
 }
 
@@ -234,6 +234,7 @@ body {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  height: 100vh;
   -webkit-box-orient: vertical;
   -webkit-box-direction: normal;
   -ms-flex-direction: column;
@@ -244,20 +245,20 @@ body {
   -webkit-box-pack: center;
   -ms-flex-pack: center;
   justify-content: center;
-  padding: 171px 0px 401px 0px;
+  padding: 171px 0px 100px 0px;
   position: relative;
   color: white;
 }
 
 @media (max-width: 1140px) {
   .main-page__content {
-    padding: 171px 0px 35.17% 0px;
+    padding: 171px 0px 100px 0px;
   }
 }
 
 @media (max-width: 800px) {
   .main-page__content {
-    padding: 130px 0px 35.17% 0px;
+    padding: 130px 0px 100px 0px;
   }
 }
 
@@ -304,13 +305,10 @@ body {
 }
 
 .main-page__button {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
+  display: inline-block;
   font-family: 'Helvetica Neue';
   background: #34c759;
   border-radius: 40px;
-  height: 72px;
   font-size: 18px;
   font-weight: 700;
   line-height: 22px;
@@ -318,11 +316,8 @@ body {
   text-align: center;
   color: #1a1a1a;
   text-transform: capitalize;
-  padding: 0 57px;
+  padding: 25px 57px;
   margin: 0px 0px 70px 0px;
-  -webkit-box-align: center;
-  -ms-flex-align: center;
-  align-items: center;
   -webkit-transition: linear 0.2s all;
   -o-transition: linear 0.2s all;
   transition: linear 0.2s all;
@@ -336,8 +331,7 @@ body {
 
 @media (max-width: 400px) {
   .main-page__button {
-    padding: 0 20px;
-    height: 52px;
+    padding: 10px 20px;
   }
 }
 
